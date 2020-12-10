@@ -1,9 +1,8 @@
 //
 //  TabBarView.swift
-//  SwiftUIStarterKitApp
 //
-//  Created by Osama Naeem on 02/08/2019.
-//  Copyright © 2019 NexThings. All rights reserved.
+//  Created by Fritz Heider  on 09/10/2020.
+//  Copyright © 2020 NexThings. All rights reserved.
 //
 
 import SwiftUI
@@ -18,7 +17,7 @@ struct TabbarView: View {
             .tabItem {
                 Image("activity-1")
                     .resizable()
-                Text("Activities")
+                Text("Feed")
             }
             
             NavigationView {
@@ -27,7 +26,7 @@ struct TabbarView: View {
             .tag(1)
             .tabItem {
                 Image("shopping-cart-icon")
-                Text("Cart")
+                Text("Connx")
             }
             
             NavigationView {

@@ -1,9 +1,8 @@
 //
 //  ShopContentView.swift
-//  SwiftUIStarterKitApp
 //
-//  Created by Osama Naeem on 06/08/2019.
-//  Copyright © 2019 NexThings. All rights reserved.
+//  Created by Fritz Heider  on 09/10/2020.
+//  Copyright © 2020 NexThings. All rights reserved.
 //
 
 import SwiftUI
@@ -100,7 +99,7 @@ struct ActivitiesContentView: View {
                         }
                         .padding(.top, 20)
                         
-                        Text("\(self.activtiesData.activities[self.selectedActivity.index].activityNameLabel) Regions")
+                        Text("\(self.activtiesData.activities[self.selectedActivity.index].activityNameLabel) ")
                             .font(.system(size: 20))
                             .padding(.leading, 30)
                             .padding(.top, 10)
@@ -132,7 +131,7 @@ struct ActivitiesContentView: View {
                         
                         
                     }
-                    .navigationBarTitle("Activities")
+                    .navigationBarTitle("Welcome Students!")
                     .navigationBarItems(trailing:
                     Button(action: {
                         self.settings.loggedIn = false

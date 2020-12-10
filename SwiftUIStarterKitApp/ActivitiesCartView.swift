@@ -1,9 +1,8 @@
 //
 //  ActivitiesCartView.swift
-//  SwiftUIStarterKitApp
-//
-//  Created by Osama Naeem on 03/08/2019.
-//  Copyright © 2019 NexThings. All rights reserved.
+///
+//  Created by Fritz Heider  on 09/10/2020.
+//  Copyright © 2020 NexThings. All rights reserved.
 //
 
 import SwiftUI
@@ -43,7 +42,7 @@ struct ActivitiesCartView: View {
                     .padding(.leading, 20)
                     .padding(.trailing, 20)
                     HStack {
-                        Text("\(self.ShoppingCartItemsData.ActivitiesCartArray.count) items")
+                        Text("\(self.ShoppingCartItemsData.ActivitiesCartArray.count) Connx")
                             .font(.system(size: 24, weight: .bold, design: .default))
                             .padding(.leading, 12)
                             .padding(.top, 8)
@@ -56,7 +55,7 @@ struct ActivitiesCartView: View {
                         .padding(.trailing, 12)
                         .padding(.top, 8)
                     }
-                    .navigationBarTitle("Shopping Cart")
+                    .navigationBarTitle("Current Connx")
                     
                 ScrollView (.vertical, showsIndicators: false) {
                     VStack (alignment: .leading) {
@@ -72,11 +71,11 @@ struct ActivitiesCartView: View {
                 Spacer()
                 ShoppingFinalInfoView(ShoppingCartItemsData: self.ShoppingCartItemsData)
                 Button(action: {
-                    let newelement = ActivitiesCartItem(itemID: String(Int.random(in: 6 ..< 100)), itemName: "DSLR", itemPrice: 500, itemColor: "Black", itemManufacturer: "Nikon", itemImage: "4")
+                    let newelement = ActivitiesCartItem(itemID: String(Int.random(in: 6 ..< 100)), itemName: "Kamran B", itemPrice: 4, itemColor: "1.5 years", itemManufacturer: "Experience: ", itemImage: "4")
                         self.ShoppingCartItemsData.ActivitiesCartArray.append(newelement)
                     }) {
                         HStack {
-                        Text("Checkout")
+                        Text("Add All Connx")
                     }
                     .padding()
                     .frame(width: geometry.size.width - 24, height: 40)
@@ -103,9 +102,9 @@ struct ShoppingFinalInfoView: View {
                     HStack {
                         Spacer()
                     }
-                    Text("Shipping to the United States")
+                    Text("Placement in the United States")
                         .font(.system(size: 12))
-                    Text("from $225")
+                    Text("from 2/25")
                         .font(.system(size: 12))
                 }.frame(width: geometry.size.width / 2 - 12)
 
@@ -117,7 +116,7 @@ struct ShoppingFinalInfoView: View {
                     Text("\(self.ShoppingCartItemsData.ActivitiesCartArray.count) items on")
                         .font(.system(size: 14))
                         .foregroundColor(Color.gray)
-                    Text("$\(calculateSum(data: self.ShoppingCartItemsData))")
+                    Text("\(calculateSum(data: self.ShoppingCartItemsData))")
                         .font(.system(.title))
                 }.frame(width: geometry.size.width / 2 - 12)
                 
@@ -169,7 +168,7 @@ struct ShoppingCartCellView: View {
                         HStack {
                             Spacer()
                         }
-                        Text("$\(self.shoppingCartItem.itemPrice)")
+                        Text("\(self.shoppingCartItem.itemPrice)")
                             .font(.system(size: 16))
                             .foregroundColor(Color.black)
                             .padding(.trailing, 15)

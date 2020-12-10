@@ -1,9 +1,8 @@
 //
 //  AccountView.swift
-//  SwiftUIStarterKitApp
 //
-//  Created by Osama Naeem on 08/08/2019.
-//  Copyright © 2019 NexThings. All rights reserved.
+//  Created by Fritz Heider  on 09/10/2020.
+//  Copyright © 2020 NexThings. All rights reserved.
 //
 
 import SwiftUI
@@ -13,33 +12,33 @@ struct AccountView: View {
     @State var locationUsage: Bool = false
     @State var username: String = "James"
     @State var selectedCurrency: Int = 0
-    @State var currencyArray: [String] = ["$ US Dollar", "£ GBP", "€ Euro"]
+    @State var currencyArray: [String] = ["Iternships", "Groups", "Meetings"]
     
     @State var selectedPaymentMethod: Int = 1
-    @State var paymentMethodArray: [String] = ["Paypal", "Credit/Debit Card", "Bitcoin"]
+    @State var paymentMethodArray: [String] = ["Residency", "Work Scholar", "Team"]
     
     var body: some View {
         GeometryReader { g in
             VStack {
-                Image("italy")
+                Image("3")
                     .resizable()
                     .frame(width: 100, height: 100)
                     .background(Color.yellow)
                     .clipShape(Circle())
                     .padding(.bottom, 10)
-                Text("John Appleseed")
+                Text("Fritz Appleseed")
                     .font(.system(size: 20))
                     
                 Form {
                     
-                    Section(header: Text("Payment Settings")) {
-                        Picker(selection: self.$selectedCurrency, label: Text("Currency")) {
+                    Section(header: Text("Current Connx")) {
+                        Picker(selection: self.$selectedCurrency, label: Text("Gideon Crawly")) {
                                          ForEach(0 ..< self.currencyArray.count) {
                                                   Text(self.currencyArray[$0]).tag($0)
                                             }
                         }
                         
-                        Picker(selection: self.$selectedPaymentMethod, label: Text("Payment Method")) {
+                        Picker(selection: self.$selectedPaymentMethod, label: Text("Sofiya H")) {
                                   ForEach(0 ..< self.paymentMethodArray.count) {
                                        Text(self.paymentMethodArray[$0]).tag($0)
                                      }
@@ -49,26 +48,26 @@ struct AccountView: View {
                             
                         }) {
                             
-                            if (self.paymentMethodArray[self.selectedPaymentMethod]) == "Credit/Debit Card" {
-                                Text("Add a Credit/Debit Card to your account")
+                            if (self.paymentMethodArray[self.selectedPaymentMethod]) == "2 nerw messages" {
+                                Text("Patrick")
                                 
                             } else {
-                                Text("Connect \(self.paymentMethodArray[self.selectedPaymentMethod]) to your account")
+                                Text("Patrick H")
                             }
                         }
 
                     }
-                    Section(header: Text("Personal Information")) {
+                    Section(header: Text("Upcoming Events")) {
                        NavigationLink(destination: Text("Profile Info")) {
-                            Text("Profile Information")
+                            Text("Upcoming Events")
                         }
                        
-                        NavigationLink(destination: Text("Billing Info")) {
-                            Text("Billing Information")
+                        NavigationLink(destination: Text("Upcomoing Assignments")) {
+                            Text("Upcoming Intertnships")
                         }
                     }
                     
-                    Section(footer: Text("Allow push notifications to get latest travel and equipment deals")) {
+                    Section(footer: Text("Allow push notifications to get latest Internships")) {
                         Toggle(isOn: self.$locationUsage) {
                               Text("Location Usage")
                         }
@@ -78,7 +77,7 @@ struct AccountView: View {
                     }
                         
             }.background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
-            .navigationBarTitle("Settings")
+            .navigationBarTitle("Account Overview")
          }
         }
     }

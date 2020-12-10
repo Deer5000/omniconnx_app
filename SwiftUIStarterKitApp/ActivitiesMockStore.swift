@@ -1,9 +1,8 @@
 //
 //  ActivitiesMockStore.swift
-//  SwiftUIStarterKitApp
 //
-//  Created by Osama Naeem on 06/08/2019.
-//  Copyright © 2019 NexThings. All rights reserved.
+//  Created by Fritz Heider  on 10/10/2020.
+//  Copyright © 2020 NexThings. All rights reserved.
 //
 
 import SwiftUI
@@ -11,53 +10,53 @@ import SwiftUI
 class ActivitiesMockStore {
     
     static let activities: [ActivitiesItem] = [
-        ActivitiesItem(id: 0, activityName: "SURFING", activityNameLabel: "Surfing", activityImage: "surfing", selectedActivity: false),
-        ActivitiesItem(id: 1, activityName: "SNOWBOARD", activityNameLabel: "Snowboarding", activityImage: "snowboarding", selectedActivity: false),
-        ActivitiesItem(id: 2, activityName: "HIKING", activityNameLabel: "Hiking", activityImage: "hiking", selectedActivity: false)
+        ActivitiesItem(id: 0, activityName: "FEED", activityNameLabel: "Recommended", activityImage: "1", selectedActivity: false),
+        ActivitiesItem(id: 1, activityName: "DOCTORS", activityNameLabel: "Connections", activityImage: "3", selectedActivity: false),
+        ActivitiesItem(id: 2, activityName: "INTERNS", activityNameLabel: "Hiking", activityImage: "2", selectedActivity: false)
         
     ]
     
     static let activityData: [ActivitiesData] = [
         
         ActivitiesData(id: 0, activitiesPlaces:
-            [ActivitiesPlaces(id: 0, activityPlace: "Costa Rica", activityPlaceImage: "costarica", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Tamarindo", pointImage: "tamarindo", pointDescription: "Tamarindo is a town in the Guanacaste Province, on Costa Rica’s Pacific coast. It’s known for beaches with strong surf, like Playa Tamarindo and Playa Langosta. To the north, Playa Grande beach is a major nesting site for huge leatherback turtles, and forms part of Las Baulas National Marine Park"),
+            [ActivitiesPlaces(id: 0, activityPlace: "Quavo", activityPlaceImage: "costarica", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Todays Connx", pointImage: "tamarindo", pointDescription: "We have selected your top rated Recommended connections list here for your browsing pleasure"),
                                                                                                                        
             ActivitiesFamousPoints(id: 1, pointName: "Jaco", pointImage: "jaco", pointDescription: "Jacó is a town on the Pacific coast of Costa Rica, southwest of the capital city, San José. It's known for its surf beaches and nightlife, and as a gateway to national parks. Rocky, gray-sand Jacó Beach is west of town. Southeast, Hermosa Beach has big waves."),
             
-            ActivitiesFamousPoints(id: 2, pointName: "Dominical", pointImage: "dominical", pointDescription: "Dominical is a beach-front town in Bahía Ballena de Osa District in the province of Puntarenas in Costa Rica, approximately 45 km south of Quepos. It is well known for large, year-round waves and is popular among surfers in Costa Rica. The town began as a small fishing village")
+            ActivitiesFamousPoints(id: 2, pointName: "Dominican", pointImage: "dominical", pointDescription: "Dominical is a beach-front town in Bahía Ballena de Osa District in the province of Puntarenas in Costa Rica, approximately 45 km south of Quepos. It is well known for large, year-round waves and is popular among surfers in Costa Rica. The town began as a small fishing village")
             ]),
              
-             ActivitiesPlaces(id: 1, activityPlace: "Bali", activityPlaceImage: "bali", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Kuta", pointImage: "kuta", pointDescription: "Kuta is a beach and resort area in the south of the island of Bali, Indonesia. One of Bali's first tourist developments, it's best known for its party-centric atmosphere and surfing in the Indian Ocean. Kuta's long, consistent waves make it a popular surf spot, particularly for beginners"),
+             ActivitiesPlaces(id: 1, activityPlace: "Dan Morse", activityPlaceImage: "bali", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Kuta", pointImage: "kuta", pointDescription: "Kuta is a beach and resort area in the south of the island of Bali, Indonesia. One of Bali's first tourist developments, it's best known for its party-centric atmosphere and surfing in the Indian Ocean. Kuta's long, consistent waves make it a popular surf spot, particularly for beginners"),
              
                  ActivitiesFamousPoints(id: 1, pointName: "Jimbaran", pointImage: "jimbaran", pointDescription: "Jimbaran Bay has a long beach with calm waters. It's lined with fish restaurants and backed by tropical forest. At its northern end, colorful boats are pulled up by the lively, open-air Kedonganan fish market. Southwest of the bay are Dreamland Beach and Balangan Beach, known for their strong surf waves.")
              ]),
              
-             ActivitiesPlaces(id: 2, activityPlace: "Cape Town", activityPlaceImage: "capetown", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Muizenberg", pointImage: "muizenberg", pointDescription: "Surfer’s Corner at Muizenberg is a popular learning spot, and is only about a 30-minute drive from the Cape Town city centre. The waves characteristic of this surf spot are gentle, and are ideal under a north-westerly wind direction."),
+             ActivitiesPlaces(id: 2, activityPlace: "Fluffy Rabbit", activityPlaceImage: "capetown", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Muizenberg", pointImage: "muizenberg", pointDescription: "Surfer’s Corner at Muizenberg is a popular learning spot, and is only about a 30-minute drive from the Cape Town city centre. The waves characteristic of this surf spot are gentle, and are ideal under a north-westerly wind direction."),
                  
                   ActivitiesFamousPoints(id: 1, pointName: "Long Beach", pointImage: "longbeach", pointDescription: "Long Beach at Kommetjie is just that, a long, sandy beach that’s very popular with surfers. The wave breaks both to the left and the right, which gives ample opportunities for both natural (right-leg dominated surfer) and goofy footers")
              ])],
                       
             activityResources:
         
-            [ActivityResource(id: 0, resourceName: "Lifestyle", resourceDescription: "Explore, Fashion, Food, music, art, photography, travel and more!", resources:
-                [ActivityResourcesItem(id: 0, resourceName: "Yoga for Surfers", resourceImage: "yoga", resourceDescription: "Article"),
-                 ActivityResourcesItem(id: 1, resourceName: "Travel for a living", resourceImage: "travel", resourceDescription: "Article"),
-                 ActivityResourcesItem(id: 2, resourceName: "Tropical Green Smoothie", resourceImage: "smoothie", resourceDescription: "Tutorial")]),
+            [ActivityResource(id: 0, resourceName: "Events", resourceDescription: "Explore, Learn. travel and more!", resources:
+                [ActivityResourcesItem(id: 0, resourceName: "Medical Student Workshops", resourceImage: "yoga", resourceDescription: "Article"),
+                 ActivityResourcesItem(id: 1, resourceName: "Extracurricular Credits", resourceImage: "travel", resourceDescription: "Article"),
+                 ActivityResourcesItem(id: 2, resourceName: "Charity Oppoirtunities", resourceImage: "smoothie", resourceDescription: "Tutorial")]),
                 
-                ActivityResource(id: 1, resourceName: "Equipment", resourceDescription: "Find your dream gear", resources: [ActivityResourcesItem(id: 1, resourceName: "Boards", resourceImage: "surfboard-1", resourceDescription: ""),
-                     ActivityResourcesItem(id: 2, resourceName: "Boardshorts", resourceImage: "boardshorts", resourceDescription: ""),
-                     ActivityResourcesItem(id: 3, resourceName: "Surfboard Bags", resourceImage: "surfboardbags", resourceDescription: "")]),
+                ActivityResource(id: 1, resourceName: "Personal Needs", resourceDescription: "Find your dream gear", resources: [ActivityResourcesItem(id: 1, resourceName: "Medical Gear", resourceImage: "surfboard-1", resourceDescription: ""),
+                     ActivityResourcesItem(id: 2, resourceName: "Scrubs", resourceImage: "boardshorts", resourceDescription: ""),
+                     ActivityResourcesItem(id: 3, resourceName: "Doctor Liasons", resourceImage: "surfboardbags", resourceDescription: "")]),
                 
-                ActivityResource(id: 2, resourceName: "Training", resourceDescription: "Best surf training resources", resources: [ActivityResourcesItem(id: 1, resourceName: "Surf Core Training", resourceImage: "boardshorts", resourceDescription: "Video"),
-                     ActivityResourcesItem(id: 2, resourceName: "Sri Lanka Surf Camp", resourceImage: "srilankacamp", resourceDescription: "Camp"),
-                     ActivityResourcesItem(id: 3, resourceName: "Surf Photography Training", resourceImage: "surfphoto", resourceDescription: "Photography")])
+                ActivityResource(id: 2, resourceName: "Training", resourceDescription: "Extra Credit for You", resources: [ActivityResourcesItem(id: 1, resourceName: "Doctor Core Training", resourceImage: "boardshorts", resourceDescription: "Video"),
+                     ActivityResourcesItem(id: 2, resourceName: "Med Scrubs Camp", resourceImage: "srilankacamp", resourceDescription: "Camp"),
+                     ActivityResourcesItem(id: 3, resourceName: "Surgical Training", resourceImage: "surfphoto", resourceDescription: "Photography")])
                 ]),
        
         ActivitiesData(id: 1, activitiesPlaces: [
         
-            ActivitiesPlaces(id: 1, activityPlace: "Snowbird", activityPlaceImage: "snowbird", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Snowbird", pointImage: "snowbird", pointDescription: "Just over the mountains to the north, Brighton and Solitude are located in Big Cottonwood Canyon. To the north of these ski and snowboard areas are Park City and Deer Valley, off of Interstate 80")]),
-            ActivitiesPlaces(id: 2, activityPlace: "Cervinia", activityPlaceImage: "italy", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Cervinia", pointImage: "italy", pointDescription: "Breuil-Cervinia is an Alpine resort in the Valle d’Aosta region of northwest Italy. It’s known for its snow-capped mountains, including the pyramid-shaped Matterhorn. A network of slopes connects Breuil-Cervinia to Swiss resorts like Zermatt,")]),
-            ActivitiesPlaces(id: 3, activityPlace: "Chamonix", activityPlaceImage: "chamonix", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Chamonix", pointImage: "chamonix", pointDescription: "Chamonix-Mont-Blanc (usually shortened to Chamonix) is a resort area near the junction of France, Switzerland and Italy. At the base of Mont Blanc, the highest summit in the Alps,")])],
+            ActivitiesPlaces(id: 1, activityPlace: "DOCTORS AVAILABLE", activityPlaceImage: "snowbird", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "DOCTORS", pointImage: "snowbird", pointDescription: "JUST USE OUR QUICK FINDING TOOL TO DISCORVR F DOCTR NEW")]),
+            ActivitiesPlaces(id: 2, activityPlace: "HOSPITALS OPEN", activityPlaceImage: "italy", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Cervinia", pointImage: "italy", pointDescription: "Breuil-Cervinia is an Alpine resort in the Valle d’Aosta region of northwest Italy. It’s known for its snow-capped mountains, including the pyramid-shaped Matterhorn. A network of slopes connects Breuil-Cervinia to Swiss resorts like Zermatt,")]),
+            ActivitiesPlaces(id: 3, activityPlace: "MY SELECTIONS", activityPlaceImage: "chamonix", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Chamonix", pointImage: "chamonix", pointDescription: "Chamonix-Mont-Blanc (usually shortened to Chamonix) is a resort area near the junction of France, Switzerland and Italy. At the base of Mont Blanc, the highest summit in the Alps,")])],
                       
                       
             activityResources:
@@ -115,9 +114,9 @@ class ActivitiesMockStore {
     ]
     
     static let shoppingCartData: [ActivitiesCartItem] = [
-           ActivitiesCartItem(itemID: "1", itemName: "Snow board", itemPrice: 450, itemColor: "Red", itemManufacturer: "Elan Explore", itemImage: "snowboardred"),
-           ActivitiesCartItem(itemID: "2", itemName: "Camping Tent", itemPrice: 235, itemColor: "Yellow", itemManufacturer: "Explorers", itemImage: "campingtent"),
-           ActivitiesCartItem(itemID: "3", itemName: "Surf board", itemPrice: 825, itemColor: "Black", itemManufacturer: "WaveExplore", itemImage: "surfboard")
+           ActivitiesCartItem(itemID: "1", itemName: "Gideon Crawly", itemPrice: 1, itemColor: "2 years", itemManufacturer: "Experience: ", itemImage: "snowboardred"),
+           ActivitiesCartItem(itemID: "2", itemName: "Patrick Kelley", itemPrice: 2, itemColor: "30 years", itemManufacturer: "Experience: ", itemImage: "campingtent"),
+           ActivitiesCartItem(itemID: "3", itemName: "Sofiya H", itemPrice: 3, itemColor: "10 years", itemManufacturer: "Experience: ", itemImage: "surfboard")
        ]
     
 }
