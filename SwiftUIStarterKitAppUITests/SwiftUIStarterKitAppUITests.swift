@@ -5,7 +5,7 @@
 //  Created by Osama Naeem on 01/08/2019.
 //  Copyright © 2019 NexThings. All rights reserved.
 //
-
+// Annotated by Fritz and Deer for Makeschool Assignemnet 2020
 import XCTest
 
 class SwiftUIStarterKitAppUITests: XCTestCase {
